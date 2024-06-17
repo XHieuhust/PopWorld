@@ -7,6 +7,8 @@ public class FalseTick : MonoBehaviour
 {
     Image falseTick;
     float startScale;
+    [SerializeField] AudioClip SFX_Tick;
+
     private void OnEnable()
     {
         startScale = transform.localScale.x;
@@ -20,6 +22,7 @@ public class FalseTick : MonoBehaviour
 
     IEnumerator StartEnable(float seconds)
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_Tick);
         transform.localScale = Vector3.zero;
         float eslapsed = 0;
         while (eslapsed <= seconds/2)

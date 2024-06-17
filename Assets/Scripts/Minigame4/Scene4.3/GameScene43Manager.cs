@@ -13,6 +13,7 @@ public class GameScene43Manager : MonoBehaviour
     public GameObject carBoss;
     public bool isStartGame;
     public bool isEndGame;
+    [SerializeField] AudioClip BGM_GamePlay;
     public delegate void EEndGame();
     public static event EEndGame eEndGame;
     public static event EEndGame ePrepareEndGame;
@@ -22,6 +23,7 @@ public class GameScene43Manager : MonoBehaviour
         ins = this;
         startShade.gameObject.SetActive(true); 
         StartCoroutine(StartCountTimePlay());
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
     }
 
     public void EndGame()
@@ -38,11 +40,13 @@ public class GameScene43Manager : MonoBehaviour
         }
         ePrepareEndGame?.Invoke();
     }
+
     IEnumerator StartEndGame()
     {
         isEndGame = true;
         eEndGame?.Invoke();
         yield return new WaitForSeconds(3f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNewScene();

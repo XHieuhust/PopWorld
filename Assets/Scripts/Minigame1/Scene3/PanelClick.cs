@@ -12,6 +12,7 @@ public class PanelClick : MonoBehaviour
     [SerializeField] Button falseClick2;
     [SerializeField] TrueTick trueTick;
     [SerializeField] FalseTick falseTick;
+
     float startScale;
     bool isCanClick;
     private void Awake()

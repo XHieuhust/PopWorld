@@ -510,6 +510,7 @@ MonoBehaviour:
   endShade: {fileID: 2028275150}
   endScene: {fileID: 725324725}
   particleSystem: {fileID: 352409450}
+  SFX_Complete: {fileID: 8300000, guid: 073981f1b52ec7242b5a875afdfc1c50, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1080,7 @@ MonoBehaviour:
   endPos: {fileID: 1488283008}
   timeDelayHint: 3
   rattle: {fileID: 1920103413}
+  SFX_CloseDoor: {fileID: 8300000, guid: 3291f83e0b785994cb175f10820e0502, type: 3}
 --- !u!61 &1125433502
 BoxCollider2D:
   m_ObjectHideFlags: 0

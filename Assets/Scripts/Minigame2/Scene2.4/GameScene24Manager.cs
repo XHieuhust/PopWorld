@@ -13,12 +13,14 @@ public class GameScene24Manager : MonoBehaviour
     private bool isEndGame;
     [SerializeField] ShadeBg startShade;
     [SerializeField] ShadeBg endShade;
+    [SerializeField] AudioClip BGM_GamePlay;
     public delegate void EndScene();
     public event EndScene endScene;
     private void Awake()
     {
         ins = this;
         startShade.gameObject.SetActive(true);
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
     }
 
     public void UpdatePoint()
@@ -42,9 +44,9 @@ public class GameScene24Manager : MonoBehaviour
 
     IEnumerator StartEndScene()
     {
-        yield return new WaitForSeconds(1f);
         endScene?.Invoke();
         yield return new WaitForSeconds(2f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNewScene();

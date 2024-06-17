@@ -17,12 +17,13 @@ public class Car : MonoBehaviour
     [SerializeField] WheelCar rightWheel;
     bool isBoosting;
     [SerializeField] GameObject boostEffect;
-
     [SerializeField] SmokeCar smoke;
+    [SerializeField] AudioClip SFX_car;
     private void Awake()
     {
         speedCar = speedNormal;
         rigidCar = GetComponent<Rigidbody2D>();
+        AudioManager.Instance.PlaySoundEffectLoop(SFX_car);
     }
 
     [Obsolete]

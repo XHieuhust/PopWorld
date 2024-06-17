@@ -341,7 +341,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371152900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -710,3 +710,4 @@ MonoBehaviour:
   startShade: {fileID: 473926922}
   endShade: {fileID: 1608987825}
   isEndgame: 0
+  BGM_GamePlay: {fileID: 8300000, guid: 1aa5c1425481e0541af2b99c42b1bbad, type: 3}

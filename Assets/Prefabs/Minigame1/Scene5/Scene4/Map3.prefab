@@ -1166,6 +1166,7 @@ MonoBehaviour:
   hintSprite: {fileID: 4867014673596878942}
   hintNetDut: {fileID: 8798938381894659270}
   light: {fileID: 6189270943473292377}
+  SFX_done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!1 &4867014673369288003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1301,7 @@ MonoBehaviour:
   hintSprite: {fileID: 4867014675014271477}
   hintNetDut: {fileID: 7426783844050539643}
   light: {fileID: 2130984943029062549}
+  SFX_done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!1 &4867014673536877840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1360,7 @@ MonoBehaviour:
   NewBoard: {fileID: 6048783611155896073}
   police: {fileID: 3950126227374485540}
   criminal: {fileID: 6581987984748370697}
+  SFX_Done: {fileID: 8300000, guid: 761eefb218cdccb4b94e8b07107f2c61, type: 3}
 --- !u!1 &4867014673596878942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1708,7 @@ MonoBehaviour:
   hintSprite: {fileID: 4867014674885208192}
   hintNetDut: {fileID: 8602175521986224575}
   light: {fileID: 5621570554000014598}
+  SFX_done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!1 &4867014674885208192
 GameObject:
   m_ObjectHideFlags: 0

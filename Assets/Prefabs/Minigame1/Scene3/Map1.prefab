@@ -2417,6 +2417,7 @@ MonoBehaviour:
   - {fileID: 4591538739702892445}
   - {fileID: 4591538740275780937}
   - {fileID: 4591538739354838816}
+  SFX_CompleteTurn: {fileID: 8300000, guid: 33c19ef411e44d642baa52a753edffaf, type: 3}
   cntCompleteTurn: 0
 --- !u!1 &4591538740710409572
 GameObject:

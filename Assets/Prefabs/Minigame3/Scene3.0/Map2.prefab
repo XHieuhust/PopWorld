@@ -847,6 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endDoor: {fileID: 1103529330425524442}
+  SFX_OpenDoor: {fileID: 8300000, guid: 3291f83e0b785994cb175f10820e0502, type: 3}
 --- !u!1 &1103529330983917818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endDoor: {fileID: 1103529330235937853}
+  SFX_OpenDoor: {fileID: 8300000, guid: 3291f83e0b785994cb175f10820e0502, type: 3}
 --- !u!1 &1721859700013280983
 GameObject:
   m_ObjectHideFlags: 0

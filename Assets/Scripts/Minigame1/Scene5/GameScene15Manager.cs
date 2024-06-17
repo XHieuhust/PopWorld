@@ -26,6 +26,7 @@ public class GameScene15Manager : MonoBehaviour
 
     public int cntDestroyObsacle;
     public bool isStopSpawn;
+    [SerializeField] AudioClip BGM_GamePlay;
     private void Awake()
     {
         ins = this;
@@ -36,6 +37,7 @@ public class GameScene15Manager : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
         StartCoroutine(StartScene());
     }
     public void Update()
@@ -88,6 +90,7 @@ public class GameScene15Manager : MonoBehaviour
 
     private void LoadNextScene()
     {
+        AudioManager.Instance.StopSound();
         string curMinigame = PlayerPrefs.GetString("curMinigame");
         int curScene = PlayerPrefs.GetInt("curScene") + 1;
         PlayerPrefs.SetInt("curScene", curScene);

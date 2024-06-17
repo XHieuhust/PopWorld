@@ -9,6 +9,7 @@ public class GameScenePrisionManager : MonoBehaviour
     [SerializeField] ShadeBg endShade;
     [SerializeField] GameObject endScene;
     [SerializeField] GameObject particleSystem;
+    [SerializeField] AudioClip SFX_Complete;
     private void Awake()
     {
         ins = this;
@@ -23,6 +24,7 @@ public class GameScenePrisionManager : MonoBehaviour
 
     IEnumerator StartEndScene()
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_Complete);
         particleSystem.SetActive(true);
         yield return new WaitForSeconds(2f);
         endScene.gameObject.SetActive(true);

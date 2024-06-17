@@ -633,3 +633,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endShade: {fileID: 308134374}
   startShade: {fileID: 1115117935}
+  BGM_Gameplay: {fileID: 8300000, guid: 07f06971ca85fa04c995b891f6b77de8, type: 3}

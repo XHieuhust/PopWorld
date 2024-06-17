@@ -19,6 +19,7 @@ public class SceneMenuManager : MonoBehaviour
     IEnumerator StartPlayMinigame()
     {
         sceneLoading.SetActive(true);
+        AudioManager.Instance.StopSound();
         yield return new WaitForSeconds(1f);
         LoadMinigame();
     }

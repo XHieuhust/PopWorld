@@ -1181,6 +1181,7 @@ MonoBehaviour:
   maxPoint: 10
   startShade: {fileID: 1842146680}
   endShade: {fileID: 534033691}
+  BGM_GamePlay: {fileID: 8300000, guid: 8e6266ab59ca09b4f854ab8f4c4ac9c1, type: 3}
 --- !u!4 &1218624426
 Transform:
   m_ObjectHideFlags: 0

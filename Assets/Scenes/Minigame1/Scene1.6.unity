@@ -1819,6 +1819,7 @@ MonoBehaviour:
   isStopRoad: 0
   cntDestroyObsacle: 0
   isStopSpawn: 0
+  BGM_GamePlay: {fileID: 8300000, guid: 64d68bc73d376ff4ea5c00c640203eb2, type: 3}
 --- !u!4 &1079616162
 Transform:
   m_ObjectHideFlags: 0

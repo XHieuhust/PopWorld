@@ -5,7 +5,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [SerializeField] Transform endDoor;
-
+    [SerializeField] AudioClip SFX_OpenDoor;
     private void Start()
     {
         StartCoroutine(StartOpenDoor());
@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
 
     IEnumerator StartOpenDoor()
     {
-        
+        AudioManager.Instance.PlaySoundEffect(SFX_OpenDoor);
         float eslapsed = 0;
         float seconds = 0.5f;
         Vector3 start = transform.position;

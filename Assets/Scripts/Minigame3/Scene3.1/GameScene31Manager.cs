@@ -10,6 +10,7 @@ public class GameScene31Manager : MonoBehaviour
     public bool isEndGame;
     [SerializeField] ShadeBg startShade;
     [SerializeField] ShadeBg endShade;
+    [SerializeField] AudioClip SFX_Done;
     private void Start()
     {
         ins = this;
@@ -19,6 +20,7 @@ public class GameScene31Manager : MonoBehaviour
     public void UpdatePoint()
     {
         point++;
+        AudioManager.Instance.PlaySoundEffect(SFX_Done);
         if(point == maxPoint)
         {
             UIManager_Scene1_3.ins.ActiveFingerScaning();
@@ -38,6 +40,7 @@ public class GameScene31Manager : MonoBehaviour
     IEnumerator StartEndScene()
     {
         yield return new WaitForSeconds(4f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNewScene(); 

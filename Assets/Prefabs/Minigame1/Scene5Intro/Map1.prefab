@@ -280,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doors:
   - {fileID: 7346282090856845191}
+  SFX_OpenDoor: {fileID: 8300000, guid: 3291f83e0b785994cb175f10820e0502, type: 3}
 --- !u!1 &7346282091315058723
 GameObject:
   m_ObjectHideFlags: 0

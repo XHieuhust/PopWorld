@@ -1254,6 +1254,7 @@ MonoBehaviour:
   falseClick2: {fileID: 8668199339046751431}
   trueTick: {fileID: -1327453201436624809, guid: 5349850e6c184fd4e852244f0c5f6e5e, type: 3}
   falseTick: {fileID: 3360244533326965651, guid: e1f8482a040ae0e4e91dbadaaed8b6c7, type: 3}
+  SFX_Click: {fileID: 8300000, guid: 1235385e465a4344f8b95c0f05d5ade7, type: 3}
 --- !u!1 &3559080476298865729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,6 +1523,7 @@ MonoBehaviour:
   falseClick2: {fileID: 2307580791935064914}
   trueTick: {fileID: -1327453201436624809, guid: 5349850e6c184fd4e852244f0c5f6e5e, type: 3}
   falseTick: {fileID: 3360244533326965651, guid: e1f8482a040ae0e4e91dbadaaed8b6c7, type: 3}
+  SFX_Click: {fileID: 8300000, guid: 1235385e465a4344f8b95c0f05d5ade7, type: 3}
 --- !u!1 &3559080476488214354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2128,7 @@ MonoBehaviour:
   falseClick2: {fileID: 5984570316147980113}
   trueTick: {fileID: -1327453201436624809, guid: 5349850e6c184fd4e852244f0c5f6e5e, type: 3}
   falseTick: {fileID: 3360244533326965651, guid: e1f8482a040ae0e4e91dbadaaed8b6c7, type: 3}
+  SFX_Click: {fileID: 8300000, guid: 1235385e465a4344f8b95c0f05d5ade7, type: 3}
 --- !u!1 &3559080477746426129
 GameObject:
   m_ObjectHideFlags: 0

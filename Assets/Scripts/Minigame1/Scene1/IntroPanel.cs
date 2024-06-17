@@ -12,6 +12,7 @@ public class IntroPanel : MonoBehaviour
     [SerializeField] Image screen;
     [SerializeField] Image bg;
     [SerializeField] Image bodamBone;
+    [SerializeField] AudioClip SFX_ClickPhone;
 
     private void Start()
     {
@@ -25,6 +26,8 @@ public class IntroPanel : MonoBehaviour
 
     IEnumerator StartOnClick()
     {
+        AudioManager.Instance.StopAudioEffect();
+        AudioManager.Instance.PlaySoundEffect(SFX_ClickPhone);
         Destroy(btnBoDam.gameObject);
 
         wolfooNam.AnimationState.SetAnimation(0, "Sit_Phone", true);

@@ -1,11 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonMinigame : MonoBehaviour
 {
+    [SerializeField] string minigame;
+    [SerializeField] List<Image> stars;
+
+    private void OnEnable()
+    {
+        int curStar = LevelManager.ins.GetStar(minigame);
+        Debug.Log(curStar);
+        curStar = curStar >= 3 ? 3 : curStar;
+        for (int i = 0; i <= curStar - 1; ++i)
+        {
+            stars[i].gameObject.SetActive(true);
+        }
+    }
     public void BeClicked()
     {
+
         StartCoroutine(StartBeClicked());
     }
 

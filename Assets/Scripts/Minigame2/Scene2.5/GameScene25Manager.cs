@@ -17,12 +17,13 @@ public class GameScene25Manager : MonoBehaviour
     [SerializeField] public Criminal_Scene5_2 criminal;
     [SerializeField] ShadeBg startShade;
     [SerializeField] ShadeBg endShade;
-
+    [SerializeField] AudioClip BGM_GamePlay;
     public bool isEndGame;
     private void Awake()
     {
         ins = this;
         startShade.gameObject.SetActive(true);
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
     }
 
     public void StartNewTurn()
@@ -47,6 +48,7 @@ public class GameScene25Manager : MonoBehaviour
         isEndGame = true;
         endGame?.Invoke(timeEndGame);
         yield return new WaitForSeconds(timeEndGame + 2f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNextScene();

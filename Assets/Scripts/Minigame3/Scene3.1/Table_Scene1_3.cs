@@ -11,6 +11,8 @@ public class Table_Scene1_3 : MonoBehaviour
     [SerializeField] float timeDelayHint;
     [SerializeField] Image fingerScanner;
     [SerializeField] Image dish;
+    [SerializeField] AudioClip BGM_Scan;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -95,6 +97,7 @@ public class Table_Scene1_3 : MonoBehaviour
         yield return new WaitForSeconds(timePlayAnimMoveDown);
         Destroy(dish.gameObject);
         fingerScanner.gameObject.SetActive(true);
+        AudioManager.Instance.PlayMusicGamePlay(BGM_Scan);
         animator.Play("Table_MoveUp");
         
     }

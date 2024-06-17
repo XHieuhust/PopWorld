@@ -15,6 +15,7 @@ public class Police_SceneBank : MonoBehaviour
     [SerializeField] float timeBeShooted;
     [SerializeField] Transform posGun;
     [SerializeField] public Transform posHeadPolice;
+    [SerializeField] AudioClip SFX_Shoot;
     public delegate void CanBeShooted();
     public static event CanBeShooted canBeShooted;
     private bool isEndGame;
@@ -48,6 +49,7 @@ public class Police_SceneBank : MonoBehaviour
 
     IEnumerator StartShooting(Vector3 goalPosition)
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_Shoot);
         GameObject bulletShoot = Instantiate(bullet, transform.position, Quaternion.identity);
         bulletShoot.GetComponent<Bullet>().ShotToGoal(goalPosition);
         bulletShoot.GetComponent<Bullet>().isOfPolice = true;

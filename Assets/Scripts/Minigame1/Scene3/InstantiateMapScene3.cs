@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class InstantiateMapScene3 : MonoBehaviour
 {
     [SerializeField] List<Image> ListMap;
+    [SerializeField] AudioClip bgm_suspect;
     private int numOfMap;
     void Start()
     {
         numOfMap = ListMap.Count;
         LoadMap();
+        AudioManager.Instance.PlayMusicGamePlay(bgm_suspect);
     }
 
     public void LoadMap()

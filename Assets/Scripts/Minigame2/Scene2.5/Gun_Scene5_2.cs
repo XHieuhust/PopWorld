@@ -13,6 +13,7 @@ public class Gun_Scene5_2 : MonoBehaviour
     public bool isRightGun;
     bool isShooting;
     [SerializeField] Bullet_Scene5_2 bullet;
+    [SerializeField] AudioClip SFX_Shoot;
     Vector3 posMouse;
     Vector3 abovePos;
     Vector3 underPos;
@@ -62,6 +63,7 @@ public class Gun_Scene5_2 : MonoBehaviour
 
     IEnumerator StartShooting(int isRight, Vector3 goalPos)
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_Shoot);
         Quaternion rayQuater = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z, 0);
         RayGun_Scene5_2 newRay = Instantiate(rayGun, headGun.position, rayQuater, transform);
         newRay.Fade(timeShooting);

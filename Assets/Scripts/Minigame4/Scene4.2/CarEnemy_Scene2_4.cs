@@ -13,6 +13,7 @@ public class CarEnemy_Scene2_4 : MonoBehaviour
     [SerializeField] float speedFast;
     [SerializeField] float timeBeShooted;
     [SerializeField] bool isBossCar;
+    [SerializeField] AudioClip SFX_Fast;
     private bool canShooted;
     private bool isMoveFast;
 
@@ -88,6 +89,7 @@ public class CarEnemy_Scene2_4 : MonoBehaviour
 
     IEnumerator StartBecomeNormal()
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_Fast);
         canShooted = false;
         isMoveFast = false;
         GameScene42Manager.ins.UpdatePoint();

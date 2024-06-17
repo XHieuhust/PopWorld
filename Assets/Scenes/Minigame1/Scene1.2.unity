@@ -1175,6 +1175,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2190891672793259837, guid: 5586fa7f46758c24481b9cdb51147fec, type: 3}
+      propertyPath: SFX_car
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dc420f76624567488640e3e0b81b583, type: 3}
+    - target: {fileID: 2190891672793259837, guid: 5586fa7f46758c24481b9cdb51147fec, type: 3}
       propertyPath: speedCar
       value: 10
       objectReference: {fileID: 0}

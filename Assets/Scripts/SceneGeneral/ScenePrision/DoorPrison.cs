@@ -11,6 +11,7 @@ public class DoorPrison : MonoBehaviour
     
     [SerializeField] float timeDelayHint;
     [SerializeField] GameObject rattle;
+    [SerializeField] AudioClip SFX_CloseDoor;
     private bool isCanClick;
 
     public delegate void ECompleteCloseDoor();
@@ -59,6 +60,7 @@ public class DoorPrison : MonoBehaviour
 
     IEnumerator StartCloseDoor()
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_CloseDoor);
         StopCoroutine(nameof(StartHint));
         isCloseDoor = true;
         float eslapsed = 0;

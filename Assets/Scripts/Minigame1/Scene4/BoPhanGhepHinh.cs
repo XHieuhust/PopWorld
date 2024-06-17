@@ -8,6 +8,7 @@ public class BoPhanGhepHinh : DragSprite
     [SerializeField] GameObject hintSprite;
     [SerializeField] GameObject hintNetDut;
     [SerializeField] GameObject light;
+    [SerializeField] AudioClip SFX_done;
     private void Awake()
     {
         SetStartValue();
@@ -20,6 +21,7 @@ public class BoPhanGhepHinh : DragSprite
 
     IEnumerator StartCorrectDrag()
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_done);
         float eslapsed = 0;
         float seconds = 0.2f;
         float startScale = transform.localScale.x;

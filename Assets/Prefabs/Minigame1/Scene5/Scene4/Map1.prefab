@@ -326,6 +326,7 @@ MonoBehaviour:
   hintSprite: {fileID: 1858771369686329625}
   hintNetDut: {fileID: 8275384405888267006}
   light: {fileID: 2373676575549913898}
+  SFX_done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!1 &774010742122494037
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +461,7 @@ MonoBehaviour:
   hintSprite: {fileID: 1858771368006479697}
   hintNetDut: {fileID: 580609804989907226}
   light: {fileID: 6840871107951713584}
+  SFX_done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!1 &774010742178838918
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +596,7 @@ MonoBehaviour:
   hintSprite: {fileID: 1858771369667738250}
   hintNetDut: {fileID: 5493109965541952998}
   light: {fileID: 4280127283949793018}
+  SFX_done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!1 &774010742826807460
 GameObject:
   m_ObjectHideFlags: 0

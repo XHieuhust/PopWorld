@@ -7,10 +7,12 @@ public class GameScene4Manager : MonoBehaviour
     public static GameScene4Manager ins;
     [SerializeField] ShadeBg endShade;
     [SerializeField] ShadeBg startShade;
+    [SerializeField] AudioClip BGM_Gameplay;
     private void Start()
     {
         ins = this;
         startShade.gameObject.SetActive(true);
+        AudioManager.Instance.PlayMusicGamePlay(BGM_Gameplay);
     }
 
     public void EndScene()
@@ -27,6 +29,7 @@ public class GameScene4Manager : MonoBehaviour
     }
     private void LoadNextScene()
     {
+        AudioManager.Instance.StopSound();
         string curMinigame = PlayerPrefs.GetString("curMinigame");
         int curScene = PlayerPrefs.GetInt("curScene") + 1;
         PlayerPrefs.SetInt("curScene", curScene);

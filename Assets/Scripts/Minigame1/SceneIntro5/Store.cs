@@ -7,7 +7,7 @@ namespace SceneIntro5_1
     public class Store : MonoBehaviour
     {
         [SerializeField] List<GameObject> doors;
-        
+        [SerializeField] AudioClip SFX_OpenDoor;
         public delegate void EDoor();
         public static EDoor openDoor;
         public static EDoor closeDoor;
@@ -27,6 +27,7 @@ namespace SceneIntro5_1
         private void OpenDoor()
         {
             StartCoroutine(StoreStartShrug());
+            AudioManager.Instance.PlaySoundEffect(SFX_OpenDoor);
             foreach (GameObject door in doors)
             {
                 door.transform.eulerAngles = new Vector3(0, 180, 0);

@@ -1039,6 +1039,7 @@ MonoBehaviour:
   timeBeShooted: 1
   posGun: {fileID: 894484282}
   posHeadPolice: {fileID: 5509012351186153805}
+  SFX_Shoot: {fileID: 8300000, guid: 5b603bf01f36d4b4f90ed2018c456d68, type: 3}
 --- !u!1 &1649635599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1274,7 @@ MonoBehaviour:
   pointAppearCriminalGun: 7
   startShade: {fileID: 1087173773}
   endShade: {fileID: 2067995477}
+  BGM_GamePlay: {fileID: 8300000, guid: 8add81df5472cce44980a59c189feb9d, type: 3}
 --- !u!4 &1843885241
 Transform:
   m_ObjectHideFlags: 0

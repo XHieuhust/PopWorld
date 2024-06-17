@@ -1251,6 +1251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endShade: {fileID: 436097398}
+  ringPhone: {fileID: 8300000, guid: bdb6484fc7dc6814ca9ffaffed6a9e9d, type: 3}
+  bgmReport: {fileID: 8300000, guid: dc3270afc440ca546ae71fcd80bbf55d, type: 3}
 --- !u!4 &1299433590
 Transform:
   m_ObjectHideFlags: 0
@@ -1363,6 +1365,7 @@ MonoBehaviour:
   screen: {fileID: 1113607377}
   bg: {fileID: 333504489}
   bodamBone: {fileID: 93773923}
+  SFX_ClickPhone: {fileID: 8300000, guid: 418da0094154fb34181c2bb27929eedd, type: 3}
 --- !u!1 &1502795395
 GameObject:
   m_ObjectHideFlags: 0

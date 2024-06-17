@@ -265,6 +265,7 @@ MonoBehaviour:
   doors:
   - {fileID: 8439084785732593182}
   - {fileID: 8439084787178876073}
+  SFX_OpenDoor: {fileID: 8300000, guid: 3291f83e0b785994cb175f10820e0502, type: 3}
 --- !u!1 &8439084786342090594
 GameObject:
   m_ObjectHideFlags: 0

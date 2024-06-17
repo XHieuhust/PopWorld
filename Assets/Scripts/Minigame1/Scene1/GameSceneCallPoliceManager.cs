@@ -6,9 +6,13 @@ public class GameSceneCallPoliceManager : MonoBehaviour
 {
     public static GameSceneCallPoliceManager ins;
     [SerializeField] ShadeBg endShade;
+    [SerializeField] AudioClip ringPhone;
+    [SerializeField] AudioClip bgmReport;
     private void Awake()
     {
         ins = this;
+        AudioManager.Instance.PlaySoundEffectLoop(ringPhone);
+        AudioManager.Instance.PlayMusicGamePlay(bgmReport);
     }
 
     public void EndScene()
@@ -19,6 +23,7 @@ public class GameSceneCallPoliceManager : MonoBehaviour
     IEnumerator StartEndScene()
     {
         yield return new WaitForSeconds(3f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNextScene();

@@ -537,6 +537,7 @@ MonoBehaviour:
   isEndGame: 0
   startShade: {fileID: 1709794669}
   endShade: {fileID: 2034690488}
+  SFX_Done: {fileID: 8300000, guid: c374b8e6b855601448f977e8d4027057, type: 3}
 --- !u!4 &1338193455
 Transform:
   m_ObjectHideFlags: 0

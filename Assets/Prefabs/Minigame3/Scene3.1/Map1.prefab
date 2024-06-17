@@ -1853,6 +1853,7 @@ MonoBehaviour:
   timeDelayHint: 3
   fingerScanner: {fileID: 2154069210293016663}
   dish: {fileID: 2154069209736846936}
+  BGM_Scan: {fileID: 8300000, guid: fb3cfcbb581d28645b69a4137032f108, type: 3}
 --- !u!1 &2154069210656708989
 GameObject:
   m_ObjectHideFlags: 0

@@ -584,6 +584,7 @@ MonoBehaviour:
   - {fileID: 4591538740667191407, guid: 83adbc6a58f2a7d4188d98703af77541, type: 3}
   - {fileID: 3559080477746426135, guid: da484052473150e4da395d619dd00ffa, type: 3}
   - {fileID: 8021782349160979217, guid: 3c70344f33717de41aed02ada4a5c25e, type: 3}
+  bgm_suspect: {fileID: 8300000, guid: 0dfb8a7d9cf71bf42b6ea1e4c06966ec, type: 3}
 --- !u!114 &8282454947236007164
 MonoBehaviour:
   m_ObjectHideFlags: 0

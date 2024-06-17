@@ -8,6 +8,8 @@ public class GameScene3Manager : MonoBehaviour
     public static GameScene3Manager ins;
     [SerializeField] ProgressBarScene13 barProgress;
     [SerializeField] List<GameObject> ListTurns;
+    [SerializeField] AudioClip SFX_CompleteTurn;
+
     public int cntCompleteTurn;
     int maxTurn;
     private void Start()
@@ -26,6 +28,7 @@ public class GameScene3Manager : MonoBehaviour
     {
         ListTurns[cntCompleteTurn].SetActive(false);
         cntCompleteTurn++;
+        AudioManager.Instance.PlaySoundEffect(SFX_CompleteTurn);
         if (cntCompleteTurn == maxTurn)
         {
             StartCoroutine(EndScene());

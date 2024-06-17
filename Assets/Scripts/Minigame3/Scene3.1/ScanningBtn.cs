@@ -91,6 +91,7 @@ public class ScanningBtn : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     IEnumerator StartDisableScan()
     {
+        AudioManager.Instance.StopSound();
         yield return new WaitForSeconds(0.5f);
         Scale(normalScale, 0);
         yield return new WaitForSeconds(0.5f);

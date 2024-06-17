@@ -11,9 +11,8 @@ public class FPS : MonoBehaviour
         DontDestroyOnLoad(this);
         ins = this;
         // Make the game run as fast as possible
-        Application.targetFrameRate = -1;
-        // Limit the framerate to 90
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 60;
+
     }
 
 }

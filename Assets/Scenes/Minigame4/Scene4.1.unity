@@ -1786,6 +1786,7 @@ MonoBehaviour:
   maxTurn: 4
   startShade: {fileID: 1516661857}
   endShade: {fileID: 1113621243}
+  BGM_GamePlay: {fileID: 8300000, guid: b3186eb5269090045b35cb7d4f769e52, type: 3}
 --- !u!212 &831808506538003161
 SpriteRenderer:
   m_ObjectHideFlags: 0

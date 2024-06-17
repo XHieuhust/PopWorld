@@ -11,10 +11,12 @@ public class GameSceneDressingManager : MonoBehaviour
     public int maxTurn;
     [SerializeField] ShadeBg startShade;
     [SerializeField] ShadeBg endShade;
+    [SerializeField] AudioClip BGM_GamePlay;
 
     private void Awake()
     {
         ins = this;
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
         StartCoroutine(StartScene());
     }
 

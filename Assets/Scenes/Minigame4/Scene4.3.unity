@@ -692,6 +692,7 @@ MonoBehaviour:
   carBoss: {fileID: 6875095045942152160}
   isStartGame: 0
   isEndGame: 0
+  BGM_GamePlay: {fileID: 8300000, guid: 8e6266ab59ca09b4f854ab8f4c4ac9c1, type: 3}
 --- !u!4 &1009873070
 Transform:
   m_ObjectHideFlags: 0

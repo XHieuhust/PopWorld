@@ -15,6 +15,7 @@ public class GamePlay_Scene4_1_Manager : MonoBehaviour
     [SerializeField] ElectronicBoard NewBoard;
     [SerializeField] Police_Scene4_1 police;
     [SerializeField] Criminal_Scene4_1 criminal;
+    [SerializeField] AudioClip SFX_Done;
     private void Start()
     {
         ins = this;
@@ -34,6 +35,7 @@ public class GamePlay_Scene4_1_Manager : MonoBehaviour
     {
         than.GetComponent<ThanSprite>().NhapNhay();
         yield return new WaitForSeconds(1.5f);
+        AudioManager.Instance.PlaySoundEffect(SFX_Done);
         Destroy(oldBoard);
         NewBoard.gameObject.SetActive(true);
         criminal.gameObject.SetActive(true);
@@ -43,6 +45,7 @@ public class GamePlay_Scene4_1_Manager : MonoBehaviour
 
     IEnumerator StartEndScene()
     {
+        
         NewBoard.TurnOnLight();
         police.MoveUp();
         criminal.Scare();

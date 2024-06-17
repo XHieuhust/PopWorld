@@ -89,3 +89,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd70fee669bff74f85af97ecb311d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SFX_Tick: {fileID: 8300000, guid: 1235385e465a4344f8b95c0f05d5ade7, type: 3}

@@ -134,6 +134,7 @@ MonoBehaviour:
   speedFast: 8
   timeBeShooted: 0.5
   isBossCar: 0
+  SFX_Fast: {fileID: 8300000, guid: 1d9414a34fd9a684a84cce09143aa4b1, type: 3}
 --- !u!1 &1228131732861491432
 GameObject:
   m_ObjectHideFlags: 0

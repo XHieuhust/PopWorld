@@ -52,7 +52,7 @@ public class Police_SceneDressing : MonoBehaviour
     {
         isEquipped = true;
         cntEquip++;
-
+        AudioManager.Instance.PlaySoundEffect(AudioManager.Instance.SFX_Wear);
         string SceneSkin = null;
         string curMinigame = PlayerPrefs.GetString("curMinigame");
         if (curMinigame == "Scene2")

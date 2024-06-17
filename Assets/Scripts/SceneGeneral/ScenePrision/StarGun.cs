@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StarGun : MonoBehaviour
 {
-
     Vector3 startPos;
     Animator animator;
     private void Awake()

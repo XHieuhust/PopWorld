@@ -24,6 +24,7 @@ public class Criminal_Scene5_2 : MonoBehaviour
     [SerializeField] public Transform headPos;
     [SerializeField] List<int> markChangeSkins;
     [SerializeField] SkeletonAnimation boostMad;
+    [SerializeField] AudioClip SFX_BeAttacked;
     private int curSkin;
     private int cntBullet;
     private int curBullet;
@@ -175,6 +176,7 @@ public class Criminal_Scene5_2 : MonoBehaviour
 
     IEnumerator StartBeAttacked()
     {
+        AudioManager.Instance.PlaySoundEffect(SFX_BeAttacked);
         StopCoroutine(nameof(StartScaleUp));
         GameScene25Manager.ins.UpdatePoint();
         curBullet++;

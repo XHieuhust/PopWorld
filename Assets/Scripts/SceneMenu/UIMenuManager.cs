@@ -87,6 +87,7 @@ public class UIMenuManager : MonoBehaviour
 
     private void IsClicked()
     {
+        AudioManager.Instance.PlayAudioClick();
         canvasGroup.blocksRaycasts = false;
     }
 }

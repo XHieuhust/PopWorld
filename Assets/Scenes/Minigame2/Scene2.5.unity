@@ -509,6 +509,7 @@ MonoBehaviour:
   timeDelayEndGame: 0.2
   isRightGun: 1
   bullet: {fileID: 8917907270524524811, guid: db5668903d2cdbd4aa634143e3f4d550, type: 3}
+  SFX_Shoot: {fileID: 8300000, guid: 5b603bf01f36d4b4f90ed2018c456d68, type: 3}
 --- !u!1 &364564972
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +745,7 @@ MonoBehaviour:
   timeDelayEndGame: 0.2
   isRightGun: 0
   bullet: {fileID: 8917907270524524811, guid: db5668903d2cdbd4aa634143e3f4d550, type: 3}
+  SFX_Shoot: {fileID: 8300000, guid: 5b603bf01f36d4b4f90ed2018c456d68, type: 3}
 --- !u!1 &585907173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1122,7 @@ MonoBehaviour:
   criminal: {fileID: 1590238336}
   startShade: {fileID: 761810140}
   endShade: {fileID: 3360135}
+  BGM_GamePlay: {fileID: 8300000, guid: 4b71462601e4ad24daa7c676028002ea, type: 3}
   isEndGame: 0
 --- !u!1 &1151995160
 GameObject:
@@ -1462,6 +1465,7 @@ MonoBehaviour:
   headPos: {fileID: 609137235}
   markChangeSkins: 0100000004000000070000000c0000000f000000
   boostMad: {fileID: 2040211186}
+  SFX_BeAttacked: {fileID: 8300000, guid: 58555eb8173867f42a9698e0e395535f, type: 3}
 --- !u!1 &1750621439
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,11 +11,12 @@ public class GameScene32Manager: MonoBehaviour
     public bool isEndgame;
     public delegate void End();
     public static event End end;
-
+    [SerializeField] AudioClip BGM_GamePlay;
     private void Awake()
     {
         ins = this;
         startShade.gameObject.SetActive(true);
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
     }
 
     public void EndGame()
@@ -25,9 +26,11 @@ public class GameScene32Manager: MonoBehaviour
 
     IEnumerator StartEndGame()
     {
+        
         isEndgame = true;
         end?.Invoke();
         yield return new WaitForSeconds(2f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNextScene();

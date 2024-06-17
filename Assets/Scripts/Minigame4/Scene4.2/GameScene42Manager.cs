@@ -10,6 +10,7 @@ public class GameScene42Manager : MonoBehaviour
 
     [SerializeField] ShadeBg startShade;
     [SerializeField] ShadeBg endShade;
+    [SerializeField] AudioClip BGM_GamePlay;
     private int curPoint;
 
     public delegate void EEndGame();
@@ -21,6 +22,7 @@ public class GameScene42Manager : MonoBehaviour
         ins = this;
         limitScene.transform.position = new Vector3(Camera.main.orthographicSize * Camera.main.aspect + 10f, 0, 0);
         startShade.gameObject.SetActive(true);
+        AudioManager.Instance.PlayMusicGamePlay(BGM_GamePlay);
     }
 
     public void UpdatePoint()
@@ -39,6 +41,7 @@ public class GameScene42Manager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         eChangeScene?.Invoke();
         yield return new WaitForSeconds(3f);
+        AudioManager.Instance.StopSound();
         endShade.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         LoadNewScene();

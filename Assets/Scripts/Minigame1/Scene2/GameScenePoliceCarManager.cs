@@ -21,6 +21,7 @@ public class GameScenePoliceCarManager : MonoBehaviour
     }
     public void EndScene()
     {
+        AudioManager.Instance.StopAudioEffect();    
         StartCoroutine(StartEndScene());
     }
 
